@@ -25,8 +25,9 @@ function registerUser() {
   //password
   let password = prompt("create a password.your password must have atleast 8 character 1 number and 1 special character:");
   while ((password.length < 8 || !/[!@#$%^&*()_+-=[\]{}|;:'"<>\/?]/.test(password) || !/[A-Z]/.test(password) || !/[0-9]/.test)) {
-    password = prompt("invalid password.your password must contain atleast 8 character 1 number and 1 special character:");
-    return;
+    password = prompt("invalid password.your password must contain atleast 8 character 1 number and 1 special character:"); 
+    return; 
+  }
     //confirmpassword
   let confirmPassword =prompt("confirm password. password must match the password feild.");
     while (confirmPassword !== password) {
